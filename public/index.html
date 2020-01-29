@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>CRUD Blog</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <h1>Comentarios</h1>
+        <form id="nameSearch">
+            <h2>Search by Author!</h2>
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="nameInput">
+            <button type="submit">Search</button>
+        </form>
+        <div id="commentsDisplay"></div>
+        <form id="addComment">
+            <fieldset>
+                <legend>Add a Post</legend>
+                <div>
+                    <label for="commentTitle">Title:</label>
+                    <input type="text" id="commentTitle" name="commentTitle" required>
+                </div>
+                <div>
+                    <label for="commentAuthor">Author:</label>
+                    <input type="text" id="commentAuthor" name="commentAuthor" required>
+                </div>
+                <div>
+                    <label for="commentContent">Content:</label>
+                    <textarea name="commentContent" id="commentContent" cols="50" rows="5" required></textarea>
+                </div>
+                <button type="submit">Post!</button>
+            </fieldset>
+        </form>
+
+        <footer></footer>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
